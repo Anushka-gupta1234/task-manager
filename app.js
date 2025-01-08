@@ -1,4 +1,4 @@
-const { createServer } = require('@vercel/node');
+// const { createServer } = require('@vercel/node');
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks');
@@ -32,6 +32,7 @@ const start = async () => {
 };
 
 start();
-module.exports = createServer(app);
+// module.exports = createServer(app);
+module.exports=app
 
 
